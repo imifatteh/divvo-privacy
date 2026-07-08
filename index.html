@@ -1,224 +1,432 @@
-```html
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Privacy Policy – Divvo</title>
-  <style>
-    body {
-      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-      padding: 1em;
-      max-width: 800px;
-      margin: 0 auto;
-      line-height: 1.6;
-    }
-
-    h2 {
-      margin-top: 1.5em;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy – Divvo</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #5f5f5f;
+    --border: #e5e5e5;
+    --accent: #2b6cb0;
+    --bg: #ffffff;
+    --highlight-bg: #fff8e1;
+    --highlight-border: #e8c547;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.65;
+  }
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 64px 24px 96px;
+  }
+  h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0 0 8px;
+    letter-spacing: -0.02em;
+  }
+  .meta {
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin-bottom: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--border);
+  }
+  .meta div { margin-bottom: 2px; }
+  .review-note {
+    background: var(--highlight-bg);
+    border: 1px solid var(--highlight-border);
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin-bottom: 40px;
+    font-size: 0.9rem;
+    color: #5c4a00;
+  }
+  .review-note strong { display: block; margin-bottom: 4px; }
+  h2 {
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin: 40px 0 12px;
+    padding-top: 4px;
+  }
+  h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 20px 0 8px;
+  }
+  p {
+    margin: 0 0 16px;
+    font-size: 1rem;
+  }
+  ul {
+    margin: 0 0 16px;
+    padding-left: 22px;
+  }
+  li { margin-bottom: 6px; }
+  a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+  a:hover { text-decoration: underline; }
+  .toc {
+    background: #f7f8f9;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 20px 24px;
+    margin-bottom: 40px;
+  }
+  .toc-title {
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--muted);
+    margin-bottom: 12px;
+  }
+  .toc ol {
+    margin: 0;
+    padding-left: 20px;
+    columns: 2;
+    column-gap: 24px;
+  }
+  .toc li {
+    font-size: 0.9rem;
+    margin-bottom: 6px;
+    break-inside: avoid;
+  }
+  .new-tag {
+    display: inline-block;
+    font-size: 0.65rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: #0b6e3f;
+    background: #e3f6ea;
+    border-radius: 4px;
+    padding: 2px 6px;
+    margin-left: 8px;
+    vertical-align: middle;
+  }
+  footer {
+    margin-top: 56px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+  @media (max-width: 600px) {
+    .container { padding: 40px 18px 72px; }
+    h1 { font-size: 1.6rem; }
+    .toc ol { columns: 1; }
+  }
+</style>
 </head>
 <body>
+<div class="container">
 
-<strong>Privacy Policy</strong>
+  <h1>Privacy Policy</h1>
+  <div class="meta">
+    <div>Effective Date: 7/8/2026</div>
+  </div>
 
-<p>
-This Privacy Policy applies to the Divvo app (hereby referred to as the
-"Application"), created by Imtiaz Fatteh ("Service Provider") as a free service
-intended for use "AS IS".
-</p>
+  
+  <nav class="toc" aria-label="Table of contents">
+    <div class="toc-title">Contents</div>
+    <ol>
+      <li><a href="#data-controller">Data Controller</a></li>
+      <li><a href="#information-we-collect">Information We Collect</a></li>
+      <li><a href="#how-we-use">How We Use Your Information</a></li>
+      <li><a href="#contact-usage">Contact Information Usage</a></li>
+      <li><a href="#tracking">Tracking</a></li>
+      <li><a href="#third-party">Third-Party Services</a></li>
+      <li><a href="#ai-processing">AI Processing</a></li>
+      <li><a href="#data-sharing">Data Sharing</a></li>
+      <li><a href="#retention">Data Retention and Deletion</a></li>
+      <li><a href="#your-rights">Your Rights</a></li>
+      <li><a href="#california">California Privacy Rights (CCPA/CPRA)</a></li>
+      <li><a href="#eu-uk">EU/UK Privacy Rights (GDPR)</a></li>
+      <li><a href="#children">Children's Privacy</a></li>
+      <li><a href="#international">International Data Transfers</a></li>
+      <li><a href="#security">Security</a></li>
+      <li><a href="#changes">Changes to This Policy</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ol>
+  </nav>
 
-<h2>Data Controller</h2>
+  <p>
+  This Privacy Policy applies to the Divvo app (hereby referred to as the
+  "Application"), created by Divvo LLC ("Company," "Service Provider," "we," "us," or "our") as a service
+  intended for use "AS IS".
+  </p>
 
-<p>
-The Service Provider, Imtiaz Fatteh, is the data controller responsible for the
-personal information collected through the Application.
-</p>
+  <h2 id="data-controller">Data Controller</h2>
 
-<h2>Information We Collect</h2>
+  <p>
+  Divvo LLC is the data controller responsible for the
+  personal information collected through the Application. You can reach us at
+  <a href="mailto:admin@divvoapp.com">admin@divvoapp.com</a>.
+  </p>
 
-<p>To create and use an account, the Application collects the following information:</p>
+  <h2 id="information-we-collect">Information We Collect</h2>
 
-<ul>
-  <li><strong>Name</strong> – displayed to other users within shared bills.</li>
-  <li><strong>Email address</strong> – used for authentication and account management.</li>
-  <li><strong>Phone number</strong> – required to create and secure your account and enable participation in shared bills.</li>
-  <li><strong>User ID</strong> – a unique identifier associated with your account.</li>
-  <li><strong>Photos</strong> – receipt images you voluntarily upload for processing.</li>
-  <li><strong>User-generated content</strong> – bill data, claimed items, and other information you create within the Application.</li>
-</ul>
+  <p>To create and use an account, the Application collects the following information:</p>
 
-<p>
-The Application does not collect precise location data, advertising identifiers,
-device identifiers, or analytics data.
-</p>
+  <ul>
+    <li><strong>Name</strong> – displayed to other users within shared bills.</li>
+    <li><strong>Email address</strong> – used for authentication and account management.</li>
+    <li><strong>Phone number</strong> – required to create and secure your account and enable participation in shared bills.</li>
+    <li><strong>User ID</strong> – a unique identifier associated with your account.</li>
+    <li><strong>Photos</strong> – receipt images you voluntarily upload for processing.</li>
+    <li><strong>User-generated content</strong> – bill data, claimed items, and other information you create within the Application.</li>
+  </ul>
 
-<h2>How We Use Your Information</h2>
+  <p>
+  The Application does not collect precise location data, advertising identifiers,
+  device identifiers, or analytics data.
+  </p>
 
-<p>Your information is used only to operate and improve the core functionality of the Application.</p>
+  <h2 id="how-we-use">How We Use Your Information</h2>
 
-<ul>
-  <li>Create and manage your account.</li>
-  <li>Authenticate users securely.</li>
-  <li>Enable bill splitting and group-based functionality.</li>
-  <li>Display user identity within shared bills.</li>
-  <li>Process uploaded receipt images.</li>
-  <li>Allow users to connect with other users through user-initiated actions.</li>
-</ul>
+  <p>Your information is used only to operate and improve the core functionality of the Application.</p>
 
-<p>
-We do not use your information for advertising, marketing, profiling, or data monetization.
-</p>
+  <ul>
+    <li>Create and manage your account.</li>
+    <li>Authenticate users securely.</li>
+    <li>Enable bill splitting and group-based functionality.</li>
+    <li>Display user identity within shared bills.</li>
+    <li>Process uploaded receipt images.</li>
+    <li>Allow users to connect with other users through user-initiated actions.</li>
+  </ul>
 
-<h2>Contact Information Usage</h2>
+  <p>
+  We do not use your information for advertising, marketing, profiling, or data monetization.
+  </p>
 
-<p>
-Phone numbers are used solely for account creation, authentication, and participation
-in shared bill features. Users may connect with one another only through
-user-initiated actions within the Application.
-</p>
+  <h2 id="contact-usage">Contact Information Usage</h2>
 
-<p>
-The Application does not access, upload, or synchronize your device contacts.
-</p>
+  <p>
+  Phone numbers are used solely for account creation, authentication, and participation
+  in shared bill features. Users may connect with one another only through
+  user-initiated actions within the Application.
+  </p>
 
-<h2>Tracking</h2>
+  <p>
+  The Application does not access, upload, or synchronize your device contacts.
+  </p>
 
-<p>
-We do not track users across third-party apps or websites and do not use advertising identifiers.
-</p>
+  <h2 id="tracking">Tracking</h2>
 
-<h2>Third-Party Services</h2>
+  <p>
+  We do not track users across third-party apps or websites and do not use advertising identifiers.
+  </p>
 
-<p>
-The Application uses Firebase (Google) to provide authentication,
-cloud database storage, and file storage.
-Your information is processed and stored according to Google's privacy and
-security practices.
-</p>
+  <h2 id="third-party">Third-Party Services</h2>
 
-<p>
-For more information, please visit:
-<a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">
-Google Firebase Privacy Policy
-</a>.
-</p>
+  <p>
+  The Application uses Firebase (Google) to provide authentication,
+  cloud database storage, and file storage.
+  Your information is processed and stored according to Google's privacy and
+  security practices.
+  </p>
 
-<h2>AI Processing</h2>
+  <p>
+  For more information, please visit:
+  <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">
+  Google Firebase Privacy Policy
+  </a>.
+  </p>
 
-<p>
-To provide receipt scanning and bill-splitting functionality, receipt images that
-you upload are securely transmitted to Anthropic for processing. Anthropic's AI
-is used solely to extract receipt text, item names, prices, quantities, and other
-information necessary to generate and organize your bill.
-</p>
+  <h2 id="ai-processing">AI Processing</h2>
 
-<p>
-Receipt images are transmitted to Anthropic only when you choose to upload a
-receipt for processing. The information is processed only to provide the
-requested functionality within the Application.
-</p>
+  <p>
+  To provide receipt scanning and bill-splitting functionality, receipt images that
+  you upload are securely transmitted to Anthropic for processing. Anthropic's AI
+  is used solely to extract receipt text, item names, prices, quantities, and other
+  information necessary to generate and organize your bill.
+  </p>
 
-<p>
-Receipt images and extracted receipt data are not used by the Application for
-advertising or marketing purposes.
-</p>
+  <p>
+  Receipt images are transmitted to Anthropic only when you choose to upload a
+  receipt for processing. The information is processed only to provide the
+  requested functionality within the Application.
+  </p>
 
-<p>
-For more information about Anthropic's privacy practices, please visit:
-<a href="https://www.anthropic.com/legal/privacy" target="_blank" rel="noopener noreferrer">
-Anthropic Privacy Policy
-</a>.
-</p>
+  <p>
+  Receipt images and extracted receipt data are not used by the Application for
+  advertising or marketing purposes.
+  </p>
 
-<p>
-External payment applications such as Venmo, Cash App, PayPal, and Zelle are
-opened only when initiated by the user. The Application does not transmit your
-personal information to these services.
-</p>
+  <p>
+  For more information about Anthropic's privacy practices, please visit:
+  <a href="https://www.anthropic.com/legal/privacy" target="_blank" rel="noopener noreferrer">
+  Anthropic Privacy Policy
+  </a>.
+  </p>
 
-<h2>Data Sharing</h2>
+  <p>
+  External payment applications such as Venmo, Cash App, PayPal, and Zelle are
+  opened only when initiated by the user. The Application does not transmit your
+  personal information to these services.
+  </p>
 
-<p>We do not sell your personal information.</p>
+  <h2 id="data-sharing">Data Sharing</h2>
 
-<p>Your information is shared only in the following limited circumstances:</p>
+  <p>We do not sell your personal information.</p>
 
-<ul>
-  <li>Firebase (authentication, cloud database, and file storage).</li>
-  <li>Anthropic (AI-powered receipt processing).</li>
-  <li>When required by law or to comply with valid legal requests.</li>
-</ul>
+  <p>Your information is shared only in the following limited circumstances:</p>
 
-<h2>Data Retention and Deletion</h2>
+  <ul>
+    <li>Firebase (authentication, cloud database, and file storage).</li>
+    <li>Anthropic (AI-powered receipt processing).</li>
+    <li>When required by law or to comply with valid legal requests.</li>
+  </ul>
 
-<p>
-We retain your information only while your account remains active.
-</p>
+  <h2 id="retention">Data Retention and Deletion</h2>
 
-<p>
-You may delete your account at any time through the Application settings.
-Upon account deletion, your personal information is permanently removed from
-our systems. Deletion is typically completed within 30 days, except where
-retention is required by law.
-</p>
+  <p>
+  We retain your information only while your account remains active.
+  </p>
 
-<h2>Your Rights</h2>
+  <p>
+  You may delete your account at any time through the Application settings.
+  Upon account deletion, your personal information is permanently removed from
+  our systems. Deletion is typically completed within 30 days, except where
+  retention is required by law.
+  </p>
 
-<p>
-You may access, update, or delete your information by using the account
-management features within the Application or by contacting us at
-<a href="mailto:admin@divvoapp.com">admin@divvoapp.com</a>.
-</p>
+  <h2 id="your-rights">Your Rights</h2>
 
-<h2>Children's Privacy</h2>
+  <p>
+  You may access, update, or delete your information by using the account
+  management features within the Application or by contacting us at
+  <a href="mailto:admin@divvoapp.com">admin@divvoapp.com</a>.
+  </p>
 
-<p>
-The Application is not intended for children under the age of 13.
-We do not knowingly collect personal information from children under 13.
-If we become aware that such information has been collected, we will promptly
-delete it.
-</p>
+  <h2 id="california">California Privacy Rights (CCPA/CPRA) <span class="new-tag">New</span></h2>
 
-<h2>International Data Transfers</h2>
+  <p>
+  If you are a California resident, the California Consumer Privacy Act, as amended
+  by the California Privacy Rights Act (CCPA/CPRA), gives you certain rights over
+  your personal information. Subject to applicable exceptions, you have the right to:
+  </p>
 
-<p>
-Your information may be stored and processed on servers located outside your
-country, including in the United States, through Firebase and Anthropic's
-infrastructure.
-</p>
+  <ul>
+    <li><strong>Know</strong> what personal information we collect, use, and disclose, and why.</li>
+    <li><strong>Delete</strong> personal information we have collected from you, subject to certain exceptions.</li>
+    <li><strong>Correct</strong> inaccurate personal information we maintain about you.</li>
+    <li><strong>Opt out</strong> of the "sale" or "sharing" of your personal information. We do not sell or share your personal information for cross-context behavioral advertising, so no action is needed to exercise this right.</li>
+    <li><strong>Non-discrimination</strong> for exercising any of these rights.</li>
+  </ul>
 
-<h2>Security</h2>
+  <p>
+  In the preceding 12 months, we have collected the categories of personal
+  information described in "Information We Collect" above, for the business
+  purposes described in "How We Use Your Information." We have not sold or
+  shared any personal information.
+  </p>
 
-<p>
-We implement reasonable administrative, technical, and organizational safeguards
-to protect your information and rely on the industry-standard security
-infrastructure provided by Firebase and Anthropic.
-</p>
+  <p>
+  To exercise any of these rights, contact us at
+  <a href="mailto:admin@divvoapp.com">admin@divvoapp.com</a>. We will verify your
+  request using the information associated with your account before responding.
+  You may also designate an authorized agent to make a request on your behalf in
+  accordance with applicable law.
+  </p>
 
-<p>
-However, no method of electronic storage or transmission is completely secure,
-and we cannot guarantee absolute security.
-</p>
+  <h2 id="eu-uk">EU/UK Privacy Rights (GDPR) <span class="new-tag">New</span></h2>
 
-<h2>Changes to This Policy</h2>
+  <p>
+  If you are located in the European Economic Area, the United Kingdom, or
+  Switzerland, we process your personal information under the following legal
+  bases: performance of a contract (to provide the Application's core
+  functionality), your consent (for example, when you choose to upload a
+  receipt), and our legitimate interests (for example, securing the Application
+  and preventing fraud).
+  </p>
 
-<p>
-We may update this Privacy Policy from time to time.
-Any updates will be posted on this page with a revised effective date.
-Continued use of the Application after changes become effective constitutes
-acceptance of the updated Privacy Policy.
-</p>
+  <p>Subject to applicable exceptions, you have the right to:</p>
 
-<p>This Privacy Policy is effective as of March 14, 2026.</p>
+  <ul>
+    <li><strong>Access</strong> the personal information we hold about you.</li>
+    <li><strong>Rectify</strong> inaccurate or incomplete personal information.</li>
+    <li><strong>Erase</strong> your personal information ("right to be forgotten").</li>
+    <li><strong>Restrict or object to</strong> our processing of your personal information.</li>
+    <li><strong>Port</strong> your personal information to another service in a structured, machine-readable format.</li>
+    <li><strong>Withdraw consent</strong> at any time, where processing is based on consent, without affecting the lawfulness of processing before withdrawal.</li>
+    <li><strong>Lodge a complaint</strong> with your local data protection supervisory authority.</li>
+  </ul>
 
-<h2>Contact Us</h2>
+  <p>
+  To exercise any of these rights, contact us at
+  <a href="mailto:admin@divvoapp.com">admin@divvoapp.com</a>.
+  </p>
 
-<p>
-If you have any questions regarding this Privacy Policy, please contact us at
-<a href="mailto:admin@divvoapp.com">admin@divvoapp.com</a>.
-</p>
+  <h2 id="children">Children's Privacy</h2>
 
+  <p>
+  The Application is not intended for children under the age of 13.
+  We do not knowingly collect personal information from children under 13.
+  If we become aware that such information has been collected, we will promptly
+  delete it.
+  </p>
+
+  <h2 id="international">International Data Transfers</h2>
+
+  <p>
+  Your information may be stored and processed on servers located outside your
+  country, including in the United States, through Firebase and Anthropic's
+  infrastructure. Where required, we rely on appropriate safeguards, such as
+  Standard Contractual Clauses, to protect personal information transferred
+  internationally.
+  </p>
+
+  <h2 id="security">Security</h2>
+
+  <p>
+  We implement reasonable administrative, technical, and organizational safeguards
+  to protect your information and rely on the industry-standard security
+  infrastructure provided by Firebase and Anthropic.
+  </p>
+
+  <p>
+  However, no method of electronic storage or transmission is completely secure,
+  and we cannot guarantee absolute security.
+  </p>
+
+  <h2 id="changes">Changes to This Policy</h2>
+
+  <p>
+  We may update this Privacy Policy from time to time.
+  Any updates will be posted on this page with a revised effective date.
+  Continued use of the Application after changes become effective constitutes
+  acceptance of the updated Privacy Policy.
+  </p>
+
+  <p>This Privacy Policy is effective as of 7/8/2026.</p>
+
+  <h2 id="contact">Contact Us</h2>
+
+  <p>
+  If you have any questions regarding this Privacy Policy, please contact us at
+  <a href="mailto:admin@divvoapp.com">admin@divvoapp.com</a>.
+  </p>
+
+  <footer>
+    &copy; <span id="year"></span> Divvo LLC. All rights reserved.
+  </footer>
+
+</div>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
-```
